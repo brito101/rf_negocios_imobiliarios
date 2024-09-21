@@ -1,0 +1,59 @@
+.main_optin {
+    background-color: $color-palette-1;
+    text-align: center;
+
+    h1 {
+        display: block;
+        text-align: center;
+        font-size: 1.8em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+
+        input {
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+}
+
+.main_footer {
+    background: url("../../img/footer.png") repeat-x bottom center;
+    background-size: 10%;
+    h1 {
+        font-size: 1.4em;
+        border-bottom: 1px solid font-color;
+    }
+
+    ul {
+        padding-left: 0px;
+
+        li {
+            list-style: none;
+            margin-bottom: 4px;
+
+            a {
+                color: $color-palette-6;
+            }
+        }
+    }
+}
+
+.main_copyright {
+    background-color: $color-palette-1;
+    font-size: 0.8em;
+    color: $font-color;
+}

@@ -1,0 +1,66 @@
+.btn-custom {
+    transition-duration: 0.5s;
+    text-decoration: none !important;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: $color-palette-21;
+    color: $color-front-opposite;
+
+    &:hover {
+        background-color: $color-palette-2;
+        color: #fff;
+    }
+}
+
+.btn-custom-2 {
+    transition-duration: 0.5s;
+    text-decoration: none !important;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-radius: 0.3rem;
+    text-align: center;
+    background-color: $color-palette-1;
+    color: $color-front-opposite;
+
+    &:hover {
+        background-color: $color-palette-13;
+        color: #fff;
+    }
+}
+
+.bg-custom {
+    background-image: linear-gradient(
+        to right,
+        $color-palette-1 0%,
+        $color-palette-3 100%
+    );
+}
+
+.badge-front {
+    background-color: $color-palette-1;
+    color: #fff;
+
+    &:hover {
+        background-color: $color-palette-13;
+    }
+}
+
+.main_properties_price {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.text-title {
+    color: $color-title !important;
+}
+.text-front {
+    color: $color-front-default;
+}

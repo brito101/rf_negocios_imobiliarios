@@ -1,0 +1,47 @@
+.main_header {
+    .header_bar {
+        background-color: $color-palette-1;
+
+        p {
+            font-size: 0.875em;
+            color: $font-color;
+        }
+
+        i {
+            font-size: 1.6em;
+            color: $font-color;
+        }
+    }
+}
+
+.navbar-brand {
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: $color-front-default;
+    }
+
+    .brand-image-custom {
+        width: 173px;
+    }
+
+    @media (min-width: 354px) and (max-width: 465px) {
+        .brand-image-custom {
+            width: 100px;
+        }
+    }
+
+    @media (min-width: 304px) and (max-width: 353px) {
+        .brand-image-custom {
+            width: 80px;
+        }
+    }
+
+    @media (max-width: 303px) {
+        .brand-image-custom {
+            width: 50px;
+        }
+    }
+}

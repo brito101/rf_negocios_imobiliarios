@@ -1,0 +1,17 @@
+.main_properties {
+    nav {
+        margin: 0 auto;
+        
+        .page-item > a {
+            color: $color-front-default;
+        }
+
+        .page-item.active {
+            color: #fff;
+
+            span {
+                background-color: $color-front-default;
+            }
+        }
+    }
+}

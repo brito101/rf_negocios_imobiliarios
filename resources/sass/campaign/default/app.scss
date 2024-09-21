@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
+
+// DEFAULT
+* {
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.875rem;
+    color: #1f201f;
+    background-color: #fbfbfb;
+
+    header {
+        border-top: 15px solid #00354e;
+        padding-top: 20px;
+    }
+
+    main {
+        min-height: calc(100vh - 130px);
+
+        #hero {
+            h2 {
+                color: #51748b;
+                font-size: 2.5rem;
+                font-weight: bold;
+
+                @media (max-width: 420px) {
+                    font-size: 2rem;
+                }
+            }
+            p {
+                margin-top: 20px;
+                font-size: 1.5rem;
+                color: #052e66;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                @media (max-width: 420px) {
+                    font-size: 1rem;
+                }
+            }
+
+            iframe {
+                width: 100%;
+                height: 490px;
+            }
+
+            #contact {
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                overflow: hidden;
+
+                h3 {
+                    font-size: 1.2em;
+                    margin: 0px;
+                    padding: 20px;
+                    color: #fbfbfb;
+                    background-image: linear-gradient(
+                        to right,
+                        #00354e 0%,
+                        #51748b 100%
+                    );
+                }
+
+                form {
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ccc;
+
+                    button {
+                        transition-duration: 0.5s;
+                        text-decoration: none !important;
+                        padding: 10px 15px;
+                        border: none;
+                        outline: none;
+                        font-size: 1rem;
+                        line-height: 1.4;
+                        border-radius: 0.3rem;
+                        text-align: center;
+                        background-color: #b5ad62;
+                        color: #fbfbfb;
+                    }
+                }
+            }
+        }
+
+        #differentials {
+            color: #00354e;
+
+            h3 {
+                font-size: 1.6rem;
+                background-color: #b5ad62;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                font-weight: bold;
+                max-width: fit-content;
+                border-radius: 5px;
+
+                @media (max-width: 420px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            p {
+                margin: 0 !important;
+                font-size: 1.4rem;
+
+                @media (max-width: 420px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        #neighborhood {
+            color: #00354e;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 1.6rem;
+
+            @media (max-width: 420px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    //FOOTER
+    #footer {
+        background-color: #00354e;
+        color: #fbfbfb;
+
+        i {
+            font-size: 1.6rem;
+        }
+    }
+
+    #cookieConsent {
+        .badge-front {
+            background-color: #00354e;
+            color: #fff;
+        }
+
+        .btn-custom {
+            transition-duration: 0.5s;
+            text-decoration: none !important;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            line-height: 1.4;
+            border-radius: 0.3rem;
+            text-align: center;
+            background-color: #b5ad62;
+            color: #fbfbfb;
+        }
+    }
+
+    //BUTTON TOP
+    .smoothScroll-top {
+        position: fixed;
+        opacity: 0;
+        margin: none;
+        border: none;
+        visibility: hidden;
+        overflow: hidden;
+        text-align: center;
+        z-index: 999;
+        color: #fbfbfb;
+        background-color: #00354e;
+        width: 47px;
+        height: 44px;
+        line-height: 22px;
+        right: 25px;
+        bottom: -25px;
+        padding-top: 2px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        box-shadow: inset 0 -5px 0 0 #9f925e;
+
+        i {
+            margin-bottom: 10px;
+        }
+
+        &.show {
+            visibility: visible;
+            cursor: pointer;
+            opacity: 1;
+            bottom: 25px;
+        }
+    }
+}
