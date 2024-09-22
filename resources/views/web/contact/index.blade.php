@@ -60,8 +60,8 @@
                 <div class="col-12 col-md-4">
                     <h2><i class="fa fa-envelope"></i> E-mail</h2>
                     <p>Nossos atendentes irão entrar em contato com você assim que possível.</p>
-                    <p class="pt-2"><a href="mailto:contato@rfimoveis.com.br"
-                            class="text-front text-decoration-none">contato@rfimoveis.com.br</a></p>
+                    <p class="pt-2"><a href="mailto:contato@rfnegociosimobiliarios.com.br"
+                            class="text-front text-decoration-none">contato@rfnegociosimobiliarios.com.br</a></p>
                 </div>
 
                 <div class="col-12 col-md-4">
