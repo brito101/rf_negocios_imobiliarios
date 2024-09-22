@@ -75,11 +75,12 @@
                     <p>Fique por dentro do tudo o que a gente compartilha em nossas redes sociais!</p>
                     <p>
                         {{-- <a href="{{ env('CLIENT_DATA_LINK_FACEBOOK') }}" target="_blank" class="btn-custom text-opposit"><i
-                                class="fab fa-facebook"></i></a> --}}
+                                class="fab fa-facebook" aria-label="Facebook" title="Facebook"></i></a> --}}
                         <a href="{{ env('CLIENT_DATA_LINK_INSTAGRAM') }}" target="_blank"
-                            class="btn-custom text-opposit mx-1"><i class="fab fa-instagram"></i></a>
+                            class="btn-custom text-opposit mx-1" aria-label="Instagram" title="Instagram"><i
+                                class="fab fa-instagram"></i></a>
                         {{-- <a href="{{ env('CLIENT_DATA_LINK_YOUTUBE') }}" target="_blank" class="btn-custom text-opposit"><i
-                                class="fab fa-youtube"></i></a> --}}
+                                class="fab fa-youtube" aria-label="Youtube" title="Youtube"></i></a> --}}
                     </p>
                 </div>
             </div>
