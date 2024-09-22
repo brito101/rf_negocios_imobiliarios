@@ -26,7 +26,7 @@ class FilterController extends Controller
         Meta::set('og:url', $route);
         Meta::set('twitter:url', $route);
         Meta::set('robots', 'index,follow');
-        Meta::set('image', asset('img/share.png'));
+        Meta::set('image', asset('img/share.webp'));
         Meta::set('canonical', $route);
 
         $properties = Property::sale()->available()->orderBy('created_at', 'desc')->paginate(12);
@@ -50,7 +50,7 @@ class FilterController extends Controller
         Meta::set('og:url', $route);
         Meta::set('twitter:url', $route);
         Meta::set('robots', 'index,follow');
-        Meta::set('image', asset('img/share.png'));
+        Meta::set('image', asset('img/share.webp'));
         Meta::set('canonical', $route);
 
         $properties = Property::rent()->available()->orderBy('created_at', 'desc')->paginate(12);
@@ -86,7 +86,7 @@ class FilterController extends Controller
         Meta::set('og:url', $route);
         Meta::set('twitter:url', $route);
         Meta::set('robots', 'index,follow');
-        Meta::set('image', asset($experience->cover) ?? asset('img/share.png'));
+        Meta::set('image', asset($experience->cover) ?? asset('img/share.webp'));
         Meta::set('canonical', $route);
 
         $properties = Property::available()->whereIn('experience_id', $ids)->orderBy('created_at', 'desc')->paginate(12);

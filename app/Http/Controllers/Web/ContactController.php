@@ -28,7 +28,7 @@ class ContactController extends Controller
         Meta::set('og:url', $route);
         Meta::set('twitter:url', $route);
         Meta::set('robots', 'index,follow');
-        Meta::set('image', asset('img/share.png'));
+        Meta::set('image', asset('img/share.webp'));
         Meta::set('canonical', $route);
 
         return view('web.contact.index');

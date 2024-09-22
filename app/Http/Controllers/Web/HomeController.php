@@ -24,7 +24,7 @@ class HomeController extends Controller
         Meta::set('og:url', $route);
         Meta::set('twitter:url', $route);
         Meta::set('robots', 'index,follow');
-        Meta::set('image', asset('img/share.png'));
+        Meta::set('image', asset('img/share.webp'));
         Meta::set('canonical', $route);
 
         $propertiesForSale = Property::sale()->available()->orderBy('created_at', 'desc')->limit(12)->get();
