@@ -14,7 +14,7 @@ class HomeController extends Controller
 
         $title = env('APP_NAME');
         $route = route('web.home');
-        $description = env('APP_DESCRIPTION');
+        $description = env('APP_DES');
         /** Meta */
         Meta::title($title);
         Meta::set('description', $description);
