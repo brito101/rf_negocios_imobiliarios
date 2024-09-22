@@ -126,8 +126,8 @@
         <section class="main_list_group py-5 bg-light">
             <div class="container">
                 <div class="p-4 main_list_group_title">
-                    <h1 class="text-center text-support">Ambiente no seu <span class="text-front"><b>estilo</b></span>
-                    </h1>
+                    <h2 class="text-center text-support">Ambiente no seu <span class="text-front"><b>estilo</b></span>
+                    </h2>
                     <p class="text-center text-muted mb-0 h4">Encontre o imóvel com a experiência que você quer viver</p>
                 </div>
 
@@ -151,7 +151,7 @@
         <section class="main_properties py-5">
             <div class="container">
                 <header class="d-flex justify-content-between align-items-center mb-5 flex-wrap">
-                    <h1 class="text-front main_properties_title">À Venda</h1>
+                    <h2 class="text-front main_properties_title">À Venda</h2>
                     <a href="{{ route('web.sale') }}"
                         class="badge badge-front p-2 text-opposit text-decoration-none text-bold">Ver
                         mais</a>
@@ -173,7 +173,7 @@
         <section class="main_properties py-5 bg-light">
             <div class="container">
                 <header class="d-flex justify-content-between align-items-center mb-5">
-                    <h1 class="text-front main_properties_title">Para Alugar</h1>
+                    <h2 class="text-front main_properties_title">Para Alugar</h2>
                     <a href="{{ route('web.rent') }}"
                         class="badge badge-front p-2 text-opposit text-decoration-none text-bold">Ver
                         mais</a>
