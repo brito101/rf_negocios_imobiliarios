@@ -9,11 +9,10 @@
     border-radius: 0.3rem;
     text-align: center;
     background-color: $color-palette-21;
-    color: $color-front-opposite;
+    color: $color-front-default;
 
     &:hover {
         background-color: $color-palette-2;
-        color: #fff;
     }
 }
 
@@ -31,8 +30,7 @@
     color: $color-front-opposite;
 
     &:hover {
-        background-color: $color-palette-13;
-        color: #fff;
+        background-color: $color-palette-12;
     }
 }
 
