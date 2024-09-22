@@ -1,18 +1,24 @@
-# Imob 2024 Project with Laravel 11 + Docker + Telescope + Debugar + AdminLTE3 + DataTables server side + Spatie ACL + Laravel Pint
+# RF Negócios Imobiliários
 
-## Resources
+<div style="text-center">
+<img src="/public/img/share.webp">
+</div>
 
-- Prospecting steps controller
-- Categories controller
-- Types controller
-- Differentials controller
-- Experiences controller
-- User controller
-- Agency controller with brokers
-- Client controller with timeline and kanban
-- Visitors log
+## Imob 2024 Project with Laravel 11 + Docker + Telescope + Debugar + AdminLTE3 + DataTables server side + Spatie ACL + Laravel Pint
 
-## Usage
+### Resources
+
+-   Prospecting steps controller
+-   Categories controller
+-   Types controller
+-   Differentials controller
+-   Experiences controller
+-   User controller
+-   Agency controller with brokers
+-   Client controller with timeline and kanban
+-   Visitors log
+
+### Usage
 
 1. `cp .env.example .env`
 2. Edit .env parameters
@@ -24,9 +30,9 @@
 8. `npm install && npm run dev`
 9. `sail stop`
 
-- `docker-compose exec laravel.test bash`
+-   `docker-compose exec laravel.test bash`
 
-### Programmer login
+#### Programmer login
 
-- user: <programador@base.com>
-- pass: 12345678
+-   user: <programador@base.com>
+-   pass: 12345678
