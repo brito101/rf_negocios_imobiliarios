@@ -97,7 +97,7 @@
     <article class="main_optin text-white py-5">
         <div class="container">
             <div class="row mx-auto" style="max-width: 600px;">
-                <h1>Quer ficar por dentro da novidades?</h1>
+                <h2>Quer ficar por dentro da novidades?</h2>
 
                 <p>Deixe o seu nome e seu melhor e-mail nos campos abaixo e nós vamos lhe informar sobre os melhores
                     negócios e todos os lançamentos do Espirito Santo</p>
@@ -131,7 +131,7 @@
                 <div class="row d-flex justify-content-around text-muted">
 
                     <div class="col-12 col-md-3 col-lg-3">
-                        <h1 class="pb-2">Navegue <span class="text-front">Aqui!</span></h1>
+                        <h2 class="pb-2">Navegue <span class="text-front">Aqui!</span></h2>
                         <ul>
                             <li><a href="{{ route('web.home') }}" class="text-back text-decoration-none">Home</a>
                             </li>
@@ -149,10 +149,10 @@
                     </div>
 
                     <div class="col-12 col-md-9 col-lg-6">
-                        <h1 class="pb-2">Nos <span class="text-front">Conheça!</span></h1>
+                        <h2 class="pb-2">Nos <span class="text-front">Conheça!</span></h2>
                         <p>Nossa maior satisfação é lhe ajudar a encontrar seu imóvel dos sonhos em Espírito Santo.</p>
 
-                        <h1 class="pb-2">Quer <span class="text-front">Investir?</span></h1>
+                        <h2 class="pb-2">Quer <span class="text-front">Investir?</span></h2>
                         <p>Entre em contato com a nossa equipe e vamos lhe informar sempre sobre os melhores negócios.
                         </p>
                     </div>
