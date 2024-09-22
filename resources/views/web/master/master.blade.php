@@ -51,7 +51,7 @@
                     <div
                         class="d-flex col-12 col-md-6 col-lg-4 justify-content-center align-items-center p-2 mx-auto text-opposit">
                         <i class="fa fa-envelope me-3"></i>
-                        <p class="my-auto ml-3">contato@rfimoveis.com.br<br />+55 (27) 99696-9639</p>
+                        <p class="my-auto ml-3">contato@rfnegociosimobiliarios.com.br<br />+55 (27) 99696-9639</p>
                     </div>
 
                 </div>
@@ -178,7 +178,7 @@
                         <p class="mb-0">CRECI 14084-F | CNPJ: 01.128.633/0001-42 | Vila Velha-ES</p>
                         <p class="mb-0">Todos os Direitos Reservados - {{ env('APP_NAME') }} ®</p>
                         <p class="mb-0">Desenvolvido com <i class="fa fa-heart me-2"></i>por
-                            <a href="https://www.rfimoveis.com.br" class="text-white text-decoration-none">
+                            <a href="https://www.rfnegociosimobiliarios.com.br" class="text-white text-decoration-none">
                                 RF Imóveis</a>
                         </p>
                     </div>
