@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/campaign/default.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/webp" href="{{ asset('img/logo.webp') }}" />
@@ -38,8 +42,9 @@
                 <div class="navbar-brand">
                     <a href="{{ route('web.home') }}"
                         class="d-flex justify-content-center align-items-center text-decoration-none">
-                        <h1 class="d-none">{{ env('APP_NAME') }}</h1>
-                        <img src="{{ url(asset('img/brand.webp')) }}" alt="{{ env('APP_NAME') }}" width="300">
+                        <img src="{{ url(asset('img/brand.webp')) }}" alt="{{ env('APP_NAME') }}"
+                            class="brand-image-custom" width="173" height="126">
+                        <h1 class="ms-3 d-none d-lg-block">Negócios Imobiliários</h1>
                     </a>
                 </div>
             </div>
@@ -73,7 +78,6 @@
                                     @if (count($property->images) > 0)
                                         @foreach ($property->images->sortBy('order') as $image)
                                             <div class="carousel-item {{ $loop->iteration == 1 ? 'active' : '' }}">
-
                                                 @if ($image->type == 'cover')
                                                     <a href="{{ url('storage/properties/' . $image->location) }}"
                                                         data-toggle="lightbox" data-gallery="property-gallery"
@@ -255,8 +259,7 @@
                 <div class="col-12 col-md-5 d-flex  align-items-center p-2">
                     <div><i class="fa fa-map-marked-alt me-4"></i></div>
                     <div>
-                        <p class="m-0">Avenida Capixaba, Sl 308, Edifício Morais Business,</p>
-                        <p class="m-0">Bairro Divino Espírito Santo,</p>
+                        <p class="m-0">Rua Oito, 14 - Coqueiral de Itaparica</p>
                         <p class="m-0">Vila Velha-ES</p>
                     </div>
                 </div>
@@ -270,9 +273,8 @@
                 <div class="col-12 col-md-4 d-flex align-items-center p-2">
                     <div><i class="fa fa-envelope me-4"></i></div>
                     <div>
-                        <p class="m-0">contato@vmdimoveis.com.br</p>
-                        <p class="m-0">+55 (27) 99623-5139</p>
-                        <p class="m-0">+55 (27) 99244-0238</p>
+                        <p class="m-0">contato@rfnegociosimobiliarios.com.br</p>
+                        <p class="m-0">+55 (27) 99696-9639</p>
                     </div>
                 </div>
             </div>
@@ -305,8 +307,8 @@
         </div>
     @endif
 
-    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top p-0 text-center"><i
-            class="fa fa-chevron-up mx-auto"></i></button>
+    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página"
+        class="smoothScroll-top p-0 text-center"><i class="fa fa-chevron-up mx-auto"></i></button>
 
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
