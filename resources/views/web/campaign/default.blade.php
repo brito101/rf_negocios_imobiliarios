@@ -43,7 +43,7 @@
                     <a href="{{ route('web.home') }}"
                         class="d-flex justify-content-center align-items-center text-decoration-none">
                         <img src="{{ url(asset('img/brand.webp')) }}" alt="{{ env('APP_NAME') }}"
-                            class="brand-image-custom" width="173" height="126">
+                        class="brand-image-custom" width="150" height="109">
                         <h1 class="ms-3 d-none d-lg-block">Negócios Imobiliários</h1>
                     </a>
                 </div>
