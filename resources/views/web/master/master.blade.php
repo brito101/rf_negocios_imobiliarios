@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @metas
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
@@ -162,7 +161,8 @@
                         {{-- <a href="{{ env('CLIENT_DATA_LINK_FACEBOOK') }}" target="_blank"><i
                                 class="fab fa-facebook btn-custom text-opposit" aria-label="Facebook" title="Facebook"></i></a> --}}
                         <a href="{{ env('CLIENT_DATA_LINK_INSTAGRAM') }}" target="_blank" class="mx-1"><i
-                                class="fab fa-instagram btn-custom text-opposit" aria-label="Instagram" title="Instagram"></i></a>
+                                class="fab fa-instagram btn-custom text-opposit" aria-label="Instagram"
+                                title="Instagram"></i></a>
                         {{-- <a href="{{ env('CLIENT_DATA_LINK_YOUTUBE') }}" target="_blank"><i
                                 class="fab fa-youtube btn-custom text-opposit" aria-label="Youtube" title="Youtube"></i></a> --}}
 
@@ -178,7 +178,8 @@
                         <p class="mb-0">CRECI 14084-F | CNPJ: 01.128.633/0001-42 | Vila Velha-ES</p>
                         <p class="mb-0">Todos os Direitos Reservados - {{ env('APP_NAME') }} ®</p>
                         <p class="mb-0">Desenvolvido com <i class="fa fa-heart me-2"></i>por
-                            <a href="https://www.rfnegociosimobiliarios.com.br" class="text-white text-decoration-none">
+                            <a href="https://www.rfnegociosimobiliarios.com.br"
+                                class="text-white text-decoration-none">
                                 RF Imóveis</a>
                         </p>
                     </div>
