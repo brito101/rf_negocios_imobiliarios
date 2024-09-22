@@ -22,6 +22,14 @@ body {
             font-weight: 600;
             font-style: normal;
             color: #00354e;
+
+            @media (max-width: 1000px) {
+                font-size: 1.5rem;
+            }
+    
+            @media (max-width: 528px) {
+                font-size: 1rem;
+            }
         }
 
         .brand-image-custom {

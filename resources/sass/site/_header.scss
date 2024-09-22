@@ -21,11 +21,19 @@
         font-weight: 600;
         font-style: normal;
         color: $color-front-default;
+
+        @media (max-width: 1000px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 528px) {
+            display: none;
+        }
     }
 
     .brand-image-custom {
         width: 150px;
-        height: auto!important;
+        height: auto !important;
     }
 
     @media (min-width: 354px) and (max-width: 465px) {
