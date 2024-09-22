@@ -170,7 +170,7 @@
             </div>
         </section>
 
-        <div class="main_copyright py-3 text-opposit text-center">
+        <div class="main_copyright py-3 text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
