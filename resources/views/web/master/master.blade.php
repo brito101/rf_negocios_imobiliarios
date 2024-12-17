@@ -38,7 +38,8 @@
 
                     <div class="d-none d-lg-flex col-lg-4 justify-content-center align-items-center p-2 text-opposit">
                         <i class="fa fa-map-marked-alt me-3"></i>
-                        <p class="my-auto ml-3">Rua Oito, 14 - Coqueiral de Itaparica<br />Vila Velha-ES</p>
+                        <p class="my-auto ml-3">Essencial Escritórios, Andar 6 sala 609<br /> Av. Eldes Scherrer Souza,
+                            2230 - Colina de Laranjeiras <br />Serra-ES. CEP: 29167-080</p>
                     </div>
 
                     <div
@@ -174,8 +175,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="mb-0">CRECI 14084-F | CNPJ: 01.128.633/0001-42 | Vila Velha-ES</p>
-                        <p class="mb-0">Todos os Direitos Reservados - {{ env('APP_NAME') }} ®</p>
+                        <p class="mb-0">CNPJ:53.524.862/0001-80</p>
+                        <p class="mb-0">Todos os Direitos Reservados - J R S Figueiredo Servicos Imobiliários ®</p>
                         <p class="mb-0">Desenvolvido com <i class="fa fa-heart me-2"></i>por
                             <a href="https://www.rfnegociosimobiliarios.com.br"
                                 class="text-white text-decoration-none">
