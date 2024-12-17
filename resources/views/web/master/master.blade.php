@@ -175,7 +175,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="mb-0">CNPJ:53.524.862/0001-80</p>
+                        <p class="mb-0">CNPJ: 53.524.862/0001-80</p>
                         <p class="mb-0">Todos os Direitos Reservados - J R S Figueiredo Servicos Imobiliários ®</p>
                         <p class="mb-0">Desenvolvido com <i class="fa fa-heart me-2"></i>por
                             <a href="https://www.rfnegociosimobiliarios.com.br"
