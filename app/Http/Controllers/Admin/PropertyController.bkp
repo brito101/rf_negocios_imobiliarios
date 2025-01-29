@@ -63,7 +63,7 @@ class PropertyController extends Controller
                     if (! $row->cover) {
                         return '<div class="d-flex justify-content-center align-items-center"><img src='.asset('img/share.webp').' class="img-thumbnail d-block" width="360" height="207" alt="'.$row->title.'" title="'.$row->title.'"/></div>';
                     } else {
-                        return '<div class="d-flex justify-content-center align-items-center"><img src='.url('storage/properties/min/'.$row->cover).' class="img-thumbnail d-block" width="360" height="360" alt="'.$row->title.'" title="'.$row->title.'"/></div>';
+                        return '<div class="d-flex justify-content-center align-items-center"><img src='.url('storage/properties/min/'.$row->cover).' class="img-thumbnail d-block" width="360" height="207" alt="'.$row->title.'" title="'.$row->title.'"/></div>';
                     }
                 })
                 ->rawColumns(['action', 'cover'])
@@ -112,16 +112,11 @@ class PropertyController extends Controller
             $data['cover'] = $nameFile;
 
             $destinationPath = storage_path().'/app/public/properties';
-            $destinationPathMax = storage_path().'/app/public/properties/max';
             $destinationPathMedium = storage_path().'/app/public/properties/medium';
             $destinationPathMin = storage_path().'/app/public/properties/min';
 
             if (! file_exists($destinationPath)) {
                 mkdir($destinationPath, 755, true);
-            }
-
-            if (! file_exists($destinationPathMax)) {
-                mkdir($destinationPathMax, 755, true);
             }
 
             if (! file_exists($destinationPathMedium)) {
@@ -132,25 +127,20 @@ class PropertyController extends Controller
                 mkdir($destinationPathMin, 755, true);
             }
 
-            $img = Image::make($request->cover)->resize(null, 860, function ($constraint) {
+            $img = Image::make($request->cover)->resize(null, 490, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
-            })->crop(860, 860)->save($destinationPath.'/'.$nameFile);
+            })->crop(860, 490)->save($destinationPath.'/'.$nameFile);
 
-            $imgMax = Image::make($request->cover)->resize(null, 1080, function ($constraint) {
+            $imgMedium = Image::make($request->cover)->resize(null, 385, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
-            })->crop(1080, 1080)->save($destinationPathMax.'/'.$nameFile);
+            })->crop(675, 385)->save($destinationPathMedium.'/'.$nameFile);
 
-            $imgMedium = Image::make($request->cover)->resize(null, 675, function ($constraint) {
+            $imgMin = Image::make($request->cover)->resize(null, 207, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
-            })->crop(675, 675)->save($destinationPathMedium.'/'.$nameFile);
-
-            $imgMin = Image::make($request->cover)->resize(null, 360, function ($constraint) {
-                $constraint->aspectRatio();
-                $constraint->upsize();
-            })->crop(360, 360)->save($destinationPathMin.'/'.$nameFile);
+            })->crop(360, 207)->save($destinationPathMin.'/'.$nameFile);
         }
 
         $property = Property::create($data);
@@ -196,10 +186,10 @@ class PropertyController extends Controller
                             mkdir($destinationPath, 755, true);
                         }
 
-                        $img = Image::make($img)->resize(null, 1080, function ($constraint) {
+                        $img = Image::make($img)->resize(null, 490, function ($constraint) {
                             $constraint->aspectRatio();
                             $constraint->upsize();
-                        })->crop(1080, 1080)->save($destinationPath.'/'.$nameFile);
+                        })->crop(860, 490)->save($destinationPath.'/'.$nameFile);
 
                         $img->save($destinationPath.'/'.$nameFile);
                     }
@@ -302,16 +292,11 @@ class PropertyController extends Controller
             $data['cover'] = $nameFile;
 
             $destinationPath = storage_path().'/app/public/properties';
-            $destinationPathMax = storage_path().'/app/public/properties/max';
             $destinationPathMedium = storage_path().'/app/public/properties/medium';
             $destinationPathMin = storage_path().'/app/public/properties/min';
 
             if (! file_exists($destinationPath)) {
                 mkdir($destinationPath, 755, true);
-            }
-
-            if (! file_exists($destinationPathMax)) {
-                mkdir($destinationPathMax, 755, true);
             }
 
             if (! file_exists($destinationPathMedium)) {
@@ -327,20 +312,15 @@ class PropertyController extends Controller
                 $constraint->upsize();
             })->crop(860, 490)->save($destinationPath.'/'.$nameFile);
 
-            $imgMax = Image::make($request->cover)->resize(null, 1080, function ($constraint) {
+            $imgMedium = Image::make($request->cover)->resize(null, 385, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
-            })->crop(1080, 1080)->save($destinationPathMax.'/'.$nameFile);
+            })->crop(675, 385)->save($destinationPathMedium.'/'.$nameFile);
 
-            $imgMedium = Image::make($request->cover)->resize(null, 675, function ($constraint) {
+            $imgMin = Image::make($request->cover)->resize(null, 207, function ($constraint) {
                 $constraint->aspectRatio();
                 $constraint->upsize();
-            })->crop(675, 675)->save($destinationPathMedium.'/'.$nameFile);
-
-            $imgMin = Image::make($request->cover)->resize(null, 360, function ($constraint) {
-                $constraint->aspectRatio();
-                $constraint->upsize();
-            })->crop(360, 360)->save($destinationPathMin.'/'.$nameFile);
+            })->crop(360, 207)->save($destinationPathMin.'/'.$nameFile);
         }
 
         $differentialsIds = [];
@@ -378,10 +358,10 @@ class PropertyController extends Controller
                             mkdir($destinationPath, 755, true);
                         }
 
-                        $img = Image::make($img)->resize(null, 1080, function ($constraint) {
+                        $img = Image::make($img)->resize(null, 490, function ($constraint) {
                             $constraint->aspectRatio();
                             $constraint->upsize();
-                        })->crop(1080, 1080)->save($destinationPath.'/'.$nameFile);
+                        })->crop(860, 490)->save($destinationPath.'/'.$nameFile);
 
                         $img->save($destinationPath.'/'.$nameFile);
                     }
